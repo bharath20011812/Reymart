@@ -308,7 +308,7 @@ section {
 }
 
 .enquiry-brn .custom-btn:hover:after {
-    border: 3px solid;
+    box-shadow: 0px 0px 64px 0px #0000001A;
 }
 
 /* unlock growth */
@@ -577,6 +577,11 @@ section.reymart-banner {
     color: #fff;
     padding-top: 5rem;
     background-color: #000;
+    padding-bottom: 0;
+}
+
+.industry-expert {
+    border-radius: 10px;
 }
 
 .reymart-banner .banner-main {
@@ -620,7 +625,7 @@ section.reymart-banner {
     background-repeat: no-repeat;
     background-size: 40%;
     position: absolute;
-    -webkit-animation: bounce .9s ease infinite alternate;
+    -webkit-animation: bounce 5s ease infinite alternate;
     left: 0;
     z-index: 9;
 }
@@ -651,7 +656,7 @@ section.reymart-banner {
     display: grid;
     align-items: center;
     justify-items: center;
-    width: 60%;
+    width: 80%;
     height: auto;
     transition: transform 0.5s ease-in;
     margin: 8px auto;
@@ -813,7 +818,6 @@ section.we-integrity {
 
 /* we worked */
 .worked-company img {
-    height: 50px;
     width: 100%;
 }
 
@@ -1410,7 +1414,6 @@ section.blogs .custom-btn {
 }
 
 .blog-row .blog-inner {
-    box-shadow: 0px 0px 64px 0px #0000001A;
     padding: 10px;
     margin: 5px;
     width: 32%;
@@ -1421,7 +1424,7 @@ section.blogs .custom-btn {
 }
 
 .blog-row .blog-inner:hover {
-    box-shadow: 0px 0px 14px 0px #00000070;
+    box-shadow: 0px 0px 64px 0px #0000001A;
 }
 
 .blog-row .blog-inner:hover .blog-view {

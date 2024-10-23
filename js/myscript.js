@@ -1,11 +1,14 @@
+// Initiate the wowjs
+new WOW().init();
+
 $(function () {
   $(".clients-carousel").owlCarousel({
-    autoplay: false,
+    autoplay: true,
     loop: true,
     margin: 15,
     dots: false,
     slideTransition: "linear",
-    autoplayTimeout: 1000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: false,
     autoplaySpeed: 5000,
     navText: false,
@@ -79,28 +82,7 @@ function toggleTopButton() {
   }
 }
 
-// counter
 
-// counter section start
-function animateCounter(element, target) {
-  let count = 0;
-  const screenSize = window.innerWidth;
-  const speed = screenSize < 768 ? 100 : 200;
-
-  const increment = target / speed;
-
-  const updateCounter = () => {
-    count += increment;
-    if (count >= target) {
-      element.textContent = target;
-    } else {
-      element.textContent = Math.ceil(count);
-      requestAnimationFrame(updateCounter);
-    }
-  };
-
-  updateCounter();
-}
 
 // Wait until the DOM content is fully loaded before running the script
 document.addEventListener('DOMContentLoaded', () => {
@@ -216,6 +198,26 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
   });
 });
 
-// Initiate the wowjs
-new WOW().init();
 
+// counter
+
+// counter section start
+function animateCounter(element, target) {
+  let count = 0;
+  const screenSize = window.innerWidth;
+  const speed = screenSize < 768 ? 100 : 200;
+
+  const increment = target / speed;
+
+  const updateCounter = () => {
+    count += increment;
+    if (count >= target) {
+      element.textContent = target;
+    } else {
+      element.textContent = Math.ceil(count);
+      requestAnimationFrame(updateCounter);
+    }
+  };
+
+  updateCounter();
+}

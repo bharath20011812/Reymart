@@ -1580,7 +1580,9 @@ section.getin-touch::before {
 @media screen and (max-width: 1100px) {}
 
 @media screen and (max-width: 992px) {
-
+    #cursor ,#cursor-border{
+        display: none;
+    }
     .rey-header nav .links {
         position: fixed;
         z-index: 9;

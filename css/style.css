@@ -162,7 +162,7 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
-    box-shadow: 0 0 0 1px white;
+    box-shadow: 0 0 0 1px #43B317;
     pointer-events: none;
     transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
         height 0.15s ease-out, background-color 0.15s ease-out;
@@ -175,7 +175,7 @@
     left: -5px;
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: #43B317;
     border-radius: 50%;
     pointer-events: none;
     z-index: 999;

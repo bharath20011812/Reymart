@@ -40,6 +40,10 @@
 
 
 @font-face {
+    src: url('../font/PlusJakartaSans-ExtraBold.ttf');
+    font-family: 'PlusJakart-extrabold';
+}
+@font-face {
     src: url('../font/PlusJakartaSans-Regular.ttf');
     font-family: 'PlusJakart-Regular';
 }
@@ -239,7 +243,7 @@ a:hover {
 
 h1 span {
     color: #47B208;
-    font-family: 'PlusJakart-bold';
+    font-family: 'PlusJakart-extrabold';
     font-style: italic;
 }
 
@@ -1086,6 +1090,7 @@ p.indust-number span {
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 40%;
+    height: 250px
 }
 
 .industry-expert .slide-item:hover {
@@ -1450,6 +1455,7 @@ section.blogs .custom-btn {
     padding: 10px;
     margin: 5px;
     width: 32%;
+    height: 550px;
 }
 
 .blog-row .blog-inner:hover img {
@@ -1500,7 +1506,7 @@ section.blogs .custom-btn {
 
 .blog-maincont .blog-view i {
     color: #fff;
-    padding: 7px 20px;
+    padding: 15px 20px;
     transform: rotate(45deg);
     font-size: 25px;
 }

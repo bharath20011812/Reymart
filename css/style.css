@@ -34,18 +34,8 @@
 }
 
 @font-face {
-    src: url('../font/PlusJakartaSans-Bold.ttf');
-    font-family: 'PlusJakart-bold';
-}
-
-
-@font-face {
     src: url('../font/PlusJakartaSans-ExtraBold.ttf');
     font-family: 'PlusJakart-extrabold';
-}
-@font-face {
-    src: url('../font/PlusJakartaSans-Regular.ttf');
-    font-family: 'PlusJakart-Regular';
 }
 
 @keyframes bounce {

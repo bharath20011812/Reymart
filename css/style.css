@@ -24,6 +24,11 @@
 }
 
 @font-face {
+    src: url('../font/Outfit-ExtraLight.ttf');
+    font-family: 'Outfit-extralight';
+}
+
+@font-face {
     src: url('../font/Outfit-SemiBold.ttf');
     font-family: 'Outfit-semibold';
 }
@@ -221,7 +226,8 @@ h5 {
 
 p,
 li {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Outfit-light';
 }
 
 a,
@@ -367,6 +373,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    bottom: auto;
 }
 
 .rey-header nav .logo {
@@ -566,6 +573,7 @@ input::placeholder {
     background: #5D933B;
     padding: 20px;
     border-radius: 8px;
+    margin-left: 30px;
 }
 
 /* Home page Start */
@@ -683,9 +691,19 @@ section.reymart-banner {
     width: 85%;
 }
 
+.banner-image {
+    width: 40%;
+}
+
+.banner-content {
+    width: 60%;
+}
+
 .banner-content p {
     padding: 30px 0;
-    width: 70%;
+    width: 90%;
+    font-family: 'Outfit-extralight';
+    font-size: 18px;
 }
 
 .banner-content .banner-call {
@@ -894,6 +912,11 @@ section.what-wedo .wedo-title {
     border-radius: 10px;
     margin: 10px;
     width: 31%;
+    height: 350px;
+}
+.wedo-inrmain .col-lg-4 p{
+    line-height: 25px;
+
 }
 
 .wedo-inrmain .col-lg-4:hover {
@@ -1248,7 +1271,7 @@ section.testimonials {
 }
 
 .testimonials-slider .item p {
-    font-family: 'Outfit-medium';
+    font-family: 'Outfit-regular';
     padding-bottom: 20px;
 }
 
@@ -1449,7 +1472,12 @@ section.blogs .custom-btn {
 .blog-inner .blog-maincont p {
     font-size: 18px;
     font-family: 'Outfit-light';
-    padding: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: 10px 0;
 }
 
 .blog-inner .blog-maincont {
@@ -1575,7 +1603,11 @@ section.getin-touch::before {
 @media screen and (max-width: 1600px) {}
 
 
-@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1300px) {
+    .footer-mainsec {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .wedo-inrmain .col-lg-4 {
@@ -1584,6 +1616,22 @@ section.getin-touch::before {
 
     section.transform-grow {
         padding: 20px;
+    }
+    .banner-content h1 {
+        width: 100%;
+    }
+    .footer-inrdiv {
+        width: 33%;
+        margin-bottom: 30px;
+    }
+    .footer-mainsec {
+        width: 90%;
+    }
+    .footer-inrdiv.col-lg-4 {
+        width: 60%;;
+    }
+    .footer-inrdiv .news-letter {
+        margin-left: 0px;
     }
 }
 
@@ -1666,23 +1714,18 @@ section.getin-touch::before {
     .rey-header #nav-toggle:checked~.icon-burger .line:nth-child(2) {
         opacity: 0;
     }
-
-    .footer-inrdiv.col-lg-2 {
-        width: 25%;
-        margin-bottom: 50px;
+    
+    .footer-inrdiv {
+        width: 48%;
+        margin-bottom: 30px;
     }
 
-    .footer-mainsec {
-        width: 95%;
+    .footer-inrdiv.col-lg-4{
+        width: 100%;
     }
 
     .footer-inrmain {
         justify-content: center;
-    }
-
-    .footer-inrdiv.col-lg-3 {
-        width: 45%;
-        margin-bottom: 50px;
     }
 
     /* home Page */
@@ -1691,6 +1734,10 @@ section.getin-touch::before {
         justify-content: center;
         text-align: center;
         gap: 30px;
+    }
+
+    .banner-main>div {
+        width: 100%;
     }
 
     .banner-content h1,
@@ -1747,24 +1794,23 @@ section.getin-touch::before {
 @media screen and (max-width: 768px) {
     .wedo-inrmain .col-lg-4 {
         width: 100%;
+        height: auto;
     }
 
     .blog-row .blog-inner {
         width: 100%;
     }
+
+    .footer-inrdiv {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     h2 {
         font-size: 30px;
-    }
-
-    .footer-inrmain .footer-inrdiv {
-        width: 100%;
-    }
-
-    .footer-inrdiv p {
-        font-size: 20px;
     }
 
 
@@ -1824,6 +1870,18 @@ section.getin-touch::before {
 
     .testimonials-slider .client-profile {
         flex-wrap: wrap;
+        width: 100% ;
+        gap: 5px;
+    }
+
+    .testimonials-slider .owl-nav {
+        position: absolute;
+        right: 2%;
+        bottom: -15%;
+    }
+
+    .testimonials-slider .item {
+        padding: 40px 18px;
     }
 
     .client-desig,
@@ -1836,11 +1894,6 @@ section.getin-touch::before {
         left: 2%;
         background-size: 80%;
     }
-
-    .testimonials-slider .item p {
-        padding: 30px 0;
-    }
-
     section.what-wedo .d-flex {
         flex-wrap: wrap;
         gap: 20px;
@@ -1885,10 +1938,13 @@ section.getin-touch::before {
 @media screen and (max-width: 500px) {
     .worked-company.row .col-lg-2 {
         background: #F6F6F6;
-        width: 48%;
+        width: 45%;
     }
 }
 
-@media screen and (max-width: 375px) {}
-
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 425px) {
+    .blog-inner h3 {
+        font-size: 20px;
+        font-family: 'Outfit-semibold';
+    }
+}

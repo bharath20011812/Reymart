@@ -663,6 +663,7 @@ section.reymart-banner {
     height: auto;
     transition: transform 0.5s ease-in;
     margin: 8px auto;
+    filter: grayscale();
 }
 
 .client-patner .box img {
@@ -673,6 +674,7 @@ section.reymart-banner {
 
 .client-patner .box:hover {
     transform: scale(1.1);
+    filter: unset;
 }
 
 .clients-carousel .owl-nav,

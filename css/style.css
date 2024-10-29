@@ -183,7 +183,7 @@
 
 .wow,
 .animated {
-    animation-duration: 4s !important;
+    animation-duration: 2s !important;
 }
 
 html {
@@ -222,6 +222,7 @@ p,
 li {
     font-size: 18px;
     font-family: 'Outfit-light';
+    line-height: 35px;
 }
 
 a,
@@ -260,7 +261,11 @@ section {
     overflow: hidden;
 }
 
-/* 15 */
+.row>div {
+    position: relative;
+}
+
+/* button */
 .custom-btn {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -569,6 +574,29 @@ input::placeholder {
     padding: 20px;
     border-radius: 8px;
     margin-left: 30px;
+}
+
+.form-subscribe input::placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+.getin-touch input::placeholder {
+    color: #FFF;
+}
+
+.getin-touch textarea::placeholder {
+    color: #FFF;
+    opacity: 1;
+}
+
+.getin-about input::placeholder {
+    color: #000;
+}
+
+.getin-about textarea::placeholder {
+    color: #000;
+    opacity: 1;
 }
 
 /* Home page Start */
@@ -911,7 +939,8 @@ section.what-wedo .wedo-title {
     width: 31%;
     height: 350px;
 }
-.wedo-inrmain .col-lg-4 p{
+
+.wedo-inrmain .col-lg-4 p {
     line-height: 25px;
 
 }
@@ -1516,30 +1545,30 @@ section.getin-touch {
     overflow: hidden;
 }
 
-.getin-touch .heading-form p {
+.heading-form p {
     font-family: 'Outfit-light';
 }
 
-.getin-touch .touch-form {
+section .touch-form {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.getin-touch .form-social {
+.touch-form .form-social {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-.getin-touch .form-social i {
+.touch-form .form-social i {
     border: 1px solid;
     padding: 10px;
     border-radius: 100px;
     font-size: 15px;
 }
 
-.getin-touch .form-social i.fa-facebook-f {
+.touch-form .form-social i.fa-facebook-f {
     padding: 10px 13px;
 }
 
@@ -1558,9 +1587,10 @@ section.getin-touch {
     margin-bottom: 30px;
 }
 
-.enquiry-brn.formbtn-right {
-    text-align: right;
+.form-subscribe .enquiry-brn.formbtn-right {
     margin-top: 3rem;
+    text-align: right;
+    float: right;
 }
 
 section.getin-touch::after {
@@ -1591,7 +1621,370 @@ section.getin-touch::before {
     right: -2%;
 }
 
-/* Navigation */
+/* About Us */
+.about-banner .about-image {
+    width: 40%;
+    position: relative;
+}
+
+.about-banner .about-image p {
+    font-family: 'Outfit-regular';
+    font-size: 20px;
+}
+
+.about-banner .about-content {
+    width: 60%;
+    position: relative;
+}
+
+.about-banner .about-content h1 {
+    width: 100%;
+    font-family: 'Outfit-bold';
+    font-size: 65px;
+}
+
+.about-banner .banner-main {
+    padding: 5rem 0;
+}
+
+.about-banner .about-content p {
+    font-size: 28px;
+}
+
+.about-banner:after {
+    content: '';
+    background-image: url(../image/about-star1.png);
+    width: 10%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    position: absolute;
+    animation: pulse 1s infinite ease-in-out alternate;
+    top: 15%;
+    right: 0;
+}
+
+.about-banner::before {
+    content: '';
+    background-image: url(../image/about-star2.png);
+    width: 10%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    position: absolute;
+    animation: pulse 1s infinite ease-in-out alternate;
+    top: 15%;
+    left: 0;
+}
+
+.about-banner .about-content::before {
+    content: '';
+    background-image: url(../image/banner-star1.png);
+    width: 10%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    position: absolute;
+    animation: gelatine 0.9s infinite;
+    top: 15%;
+    right: 10%;
+}
+
+.about-banner .about-image::before {
+    content: '';
+    background-image: url(../image/banner-star1.png);
+    width: 10%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    position: absolute;
+    animation: gelatine 0.9s infinite;
+    top: -15%;
+    right: -2%;
+}
+
+/* sec 2 */
+.story-img {
+    text-align: center;
+    position: relative;
+}
+
+.story-img img {
+    width: 100%;
+}
+
+.story-content p {
+    font-family: 'Outfit-light';
+    padding-bottom: 10px;
+}
+
+.story-mission {
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.story-mission img {
+    background: #47B208;
+    border-radius: 10px;
+    padding: 6px;
+    width: 15%;
+}
+
+.story-mission h4 {
+    font-family: 'Outfit-semibold';
+    margin: 10px 0;
+}
+
+.counter-row .counter-innr p {
+    font-family: 'Outfit-medium';
+    width: 90%;
+    margin: auto;
+}
+
+.story-mission p {
+    font-family: 'Outfit-regular';
+}
+
+.story-img:after {
+    content: '';
+    background-image: url(../image/about-star3.png);
+    width: 14%;
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: absolute;
+    animation: pulse 1s infinite ease-in-out alternate;
+    top: 12%;
+    right: 23%;
+}
+
+.story-img::before {
+    content: '';
+    background-image: url(../image/banner-star2.png);
+    width: 15%;
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 76%;
+    position: absolute;
+    animation: pulse 1s infinite ease-in-out alternate;
+    bottom: 4.5%;
+    left: 5%;
+}
+
+.story-content:after {
+    content: '';
+    background-image: url(../image/banner-star1.png);
+    width: 6%;
+    height: 12%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    position: absolute;
+    animation: pulse 1s infinite ease-in-out alternate;
+    top: -6%;
+    left: -3%;
+}
+
+.story-content::before {
+    content: '';
+    background-image: url(../image/banner-star5.png);
+    width: 7%;
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    position: absolute;
+    animation: gelatine 0.9s infinite;
+    bottom: 3.5%;
+    left: 0;
+}
+
+.mision-vision::before {
+    content: '';
+    background-image: url(../image/banner-star1.png);
+    width: 7%;
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    position: absolute;
+    animation: gelatine 0.9s infinite;
+    top: -22.5%;
+    right: 0;
+}
+
+section.getin-about {
+    background: #E5F2DD;
+}
+
+.enquiry-brn button.custom-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.getin-about .form-subscribe .form-control {
+    border-color: #000;
+}
+
+.experience-content p {
+    padding-bottom: 5px;
+}
+
+.experiec-img img {
+    width: 100%;
+}
+
+.experiec-img:after {
+    content: '';
+    background-image: url(../image/banner-star2.png);
+    width: 10%;
+    height: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    position: absolute;
+    animation: pulse-rotate 1s infinite ease-in-out alternate;
+    top: 1%;
+    right: 11%;
+}
+
+.experiec-img::before {
+    content: '';
+    background-image: url(../image/banner-star2.png);
+    width: 20%;
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 82%;
+    position: absolute;
+    animation: pulse-rotate 1s infinite ease-in-out alternate;
+    bottom: -1.5%;
+    left: 5%;
+}
+
+section.experience::before {
+    content: '';
+    background-image: url(../image/about-star2.png);
+    width: 6%;
+    height: 17%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    animation: gelatine 0.9s infinite;
+    top: 0%;
+    right: 2%;
+}
+
+/* contact page */
+.contact-mainform .form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding: 15px 0;
+    margin-bottom: 14px;
+}
+
+.contact-form {
+    margin-bottom: 3rem;
+    background: #828680;
+    border-radius: 10px;
+}
+
+.contact-infoform {
+    padding: 40px;
+}
+
+.contact-infodetail {
+    padding: 40px;
+    background-color: #D2CAC1;
+    background-image: url(../image/contac-global.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+    border-radius: 0 10px 10px 0;
+}
+
+.contact-mainform input::placeholder {
+    opacity: 1;
+    color: #fff;
+}
+
+.contact-mainform textarea::placeholder {
+    opacity: 1;
+    color: #fff;
+}
+
+.contact-infodetail p {
+    padding: 10px 0;
+    font-family: 'Outfit-regular';
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.contact-infodetail .address-locat {
+    display: flex;
+    gap: 20px;
+}
+
+.address-locat .detial-logo img {
+    width: 80%;
+}
+
+.address-locat .detial-logo {
+    text-align: center;
+    width: 10%;
+}
+
+.address-detial {
+    width: 90%;
+}
+
+.address-detial h3 {
+    font-size: 25px;
+    font-family: 'Outfit-medium';
+}
+
+.address-locat {
+    padding: 10px 0;
+}
+
+.address-detial p {
+    padding: 5px 0;
+    font-family: 'Outfit-regular';
+}
+
+.locatar-main {
+    width: 100%;
+}
+
+.locatar-main iframe {
+    width: 100%;
+    height: 600px;
+    margin-bottom: -10px;
+}
+
+.info-contact {
+    background: #828680;
+    border-radius: 10px;
+}
 
 /* responsive */
 @media screen and (max-width: 2500px) {}
@@ -1606,6 +1999,12 @@ section.getin-touch::before {
     .footer-mainsec {
         width: 100%;
     }
+
+    .locatar-main iframe {
+        height: 400px;
+    }
+
+    /* About Us */
 }
 
 @media screen and (max-width: 1200px) {
@@ -1616,21 +2015,33 @@ section.getin-touch::before {
     section.transform-grow {
         padding: 20px;
     }
+
     .banner-content h1 {
         width: 100%;
     }
+
     .footer-inrdiv {
         width: 33%;
         margin-bottom: 30px;
     }
+
     .footer-mainsec {
         width: 90%;
     }
+
     .footer-inrdiv.col-lg-4 {
-        width: 60%;;
+        width: 60%;
+        ;
     }
+
     .footer-inrdiv .news-letter {
         margin-left: 0px;
+    }
+
+    /* About Us */
+    .about-banner .about-content h1 {
+        width: 100%;
+        font-size: 50px;
     }
 }
 
@@ -1713,13 +2124,13 @@ section.getin-touch::before {
     .rey-header #nav-toggle:checked~.icon-burger .line:nth-child(2) {
         opacity: 0;
     }
-    
+
     .footer-inrdiv {
         width: 48%;
         margin-bottom: 30px;
     }
 
-    .footer-inrdiv.col-lg-4{
+    .footer-inrdiv.col-lg-4 {
         width: 100%;
     }
 
@@ -1788,6 +2199,32 @@ section.getin-touch::before {
     .assist-Form .form-group.col-lg-4 {
         width: 33%;
     }
+
+    /* About Us */
+    .about-banner .about-content,
+    .about-banner .about-image {
+        width: 100%;
+    }
+
+    .experience-main.row {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .contact-infodetail {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .info-contact {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form {
+        background: #828680;
+        border-radius: 10px;
+        width: 95%;
+        margin: 0 auto 3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1804,6 +2241,8 @@ section.getin-touch::before {
         width: 100%;
         margin-bottom: 30px;
     }
+
+    /* About Us */
 
 }
 
@@ -1869,7 +2308,7 @@ section.getin-touch::before {
 
     .testimonials-slider .client-profile {
         flex-wrap: wrap;
-        width: 100% ;
+        width: 100%;
         gap: 5px;
     }
 
@@ -1893,6 +2332,7 @@ section.getin-touch::before {
         left: 2%;
         background-size: 80%;
     }
+
     section.what-wedo .d-flex {
         flex-wrap: wrap;
         gap: 20px;
@@ -1932,6 +2372,78 @@ section.getin-touch::before {
         width: 100%;
         text-align: left;
     }
+
+    /* About Us */
+    .counter-innr {
+        width: 100%;
+    }
+
+    .counter-row .counter-innr p {
+        width: 100%;
+    }
+
+    .counter-innr:last-child::before {
+        border-bottom: 0;
+    }
+
+    .story-mission {
+        width: 100%;
+    }
+
+    .mision-vision {
+        flex-wrap: wrap;
+    }
+
+    .about-banner .about-content h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .about-banner .banner-main {
+        padding: 2rem 0 3rem;
+    }
+
+    .about-banner .about-content p {
+        margin-bottom: 10px;
+    }
+
+    .story-content:after {
+        width: 25%;
+        height: 12%;
+        top: -66px;
+        left: auto;
+        right: 0;
+    }
+
+    .about-banner .about-content::before {
+        width: 26%;
+        height: 35%;
+        background-size: 47%;
+        top: -15%;
+        right: 0%;
+    }
+
+    .contact-infodetail {
+        padding: 25px;
+    }
+
+    .contact-infodetail .address-locat {
+        display: flex;
+        gap: 5px;
+    }
+
+    .enquiry-brn .custom-btn {
+        padding: 10px 15px;
+    }
+
+    .contact-infoform {
+        padding: 20px;
+    }
+
+    .address-locat .detial-logo {
+        text-align: center;
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1939,11 +2451,27 @@ section.getin-touch::before {
         background: #F6F6F6;
         width: 45%;
     }
+
+    /* About Us */
 }
 
 @media screen and (max-width: 425px) {
     .blog-inner h3 {
         font-size: 20px;
         font-family: 'Outfit-semibold';
+    }
+
+    /* About Us */
+}
+
+@media screen and (max-width: 375px) {
+
+    .contact-infodetail h2 {
+        font-size: 25px;
+    }
+
+    .about-banner .about-content h1 {
+        width: 100%;
+        font-size: 32px;
     }
 }

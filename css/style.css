@@ -1622,9 +1622,10 @@ section.getin-touch::before {
 }
 
 /* About Us */
-.about-banner .about-image {
+.reymart-banner .about-image {
     width: 40%;
     position: relative;
+    margin-top: 3rem;
 }
 
 .about-banner .about-image p {
@@ -1640,12 +1641,13 @@ section.getin-touch::before {
 .about-banner .about-content h1 {
     width: 100%;
     font-family: 'Outfit-bold';
-    font-size: 65px;
+    font-size: 60px;
 }
 
 .about-banner .banner-main,
 .contact-banner .banner-main {
     padding: 5rem 0;
+    align-items: start;
 }
 
 .about-banner .about-content p {
@@ -2003,7 +2005,7 @@ section.experience::before {
     background-size: 47%;
     position: absolute;
     animation: pulse 1s infinite ease-in-out alternate;
-    top: 15%;
+    top: -4%;
     right: 0;
 }
 
@@ -2017,7 +2019,7 @@ section.experience::before {
     background-size: 47%;
     position: absolute;
     animation: pulse 1s infinite ease-in-out alternate;
-    top: 15%;
+    top: -4%;
     left: 0;
 }
 
@@ -2032,9 +2034,6 @@ section.experience::before {
 
 
 @media screen and (max-width: 1300px) {
-    .footer-mainsec {
-        width: 100%;
-    }
 
     .locatar-main iframe {
         height: 400px;
@@ -2260,6 +2259,10 @@ section.experience::before {
         border-radius: 10px;
         width: 95%;
         margin: 0 auto 3rem;
+    }
+
+    .reymart-banner .about-image {
+        margin-top: 0;
     }
 }
 

@@ -1785,7 +1785,7 @@ section.getin-touch::before {
     background-size: 76%;
     position: absolute;
     animation: pulse 1s infinite ease-in-out alternate;
-    bottom: 4.5%;
+    bottom: -4.5%;
     left: 5%;
 }
 

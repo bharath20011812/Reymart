@@ -242,22 +242,43 @@ $(document).ready(function () {
 
 // pagination
 
-// jQuery Plugin: http://flaviusmatis.github.io/simplePagination.js/
-
 var items = $(".faqs-container .faq-singular");
 var numItems = items.length;
-var perPage = 4;
+var perPage = 5;
 
 items.slice(perPage).hide();
 
-$('#pagination-container').pagination({
-  items: numItems,
-  itemsOnPage: perPage,
-  prevText: "&laquo;",
-  nextText: "&raquo;",
-  onPageClick: function (pageNumber) {
-    var showFrom = perPage * (pageNumber - 1);
-    var showTo = showFrom + perPage;
-    items.hide().slice(showFrom, showTo).show();
+if (numItems > perPage) {
+  $('.question-main #pagination-container').pagination({
+    items: numItems,
+    itemsOnPage: perPage,
+    prevText: "&laquo;",
+    nextText: "&raquo;",
+    onPageClick: function (pageNumber) {
+      var showFrom = perPage * (pageNumber - 1);
+      var showTo = showFrom + perPage;
+      items.hide().slice(showFrom, showTo).show();
+    }
+  });
+} else {
+  $('.question-main #pagination-container').hide(); // Hides pagination if not needed
+}
+
+// read more
+$('.moreless-button').click(function () {
+  // Slide up all other open 'moretext' elements except the one being clicked
+  $('.moretext').not($(this).closest('.read-moremain').find('.moretext')).slideUp();
+
+  // Toggle the 'moretext' within the clicked section
+  $(this).closest('.read-moremain').find('.moretext').slideToggle();
+
+  // Update the text of all other 'moreless-button' elements
+  $('.moreless-button').not(this).text("Read more");
+
+  // Update the text of the clicked button
+  if ($(this).text() == "Read less") {
+    $(this).text("Read more");
+  } else {
+    $(this).text("Read less");
   }
 });

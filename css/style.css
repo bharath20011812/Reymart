@@ -2937,7 +2937,7 @@ section.service-banner::before {
     background-size: 100%;
     position: absolute;
     animation: pulse 1s infinite ease-in-out alternate;
-    bottom: 10%;
+    bottom: 5%;
     left: 1%;
 }
 
